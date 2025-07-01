@@ -2,9 +2,13 @@ import os
 import requests
 import zipfile
 from io import BytesIO
+from pathlib import Path
 
-# Dossier cible pour les fichiers extraits
-raw_dir = "raw"
+# Trouver la racine du projet automatiquement
+BASE_DIR = Path(__file__).resolve().parents[2]
+raw_dir = BASE_DIR / "data" / "raw"
+raw_dir.mkdir(parents=True, exist_ok=True)
+
 os.makedirs(raw_dir, exist_ok=True)
 
 # Années à traiter
@@ -38,7 +42,7 @@ for year in years:
                 else:
                     target_filename = f"{year} - {i+1} Stack Overflow Survey Results.csv"
 
-                target_path = os.path.join(raw_dir, target_filename)
+                target_path = raw_dir / target_filename
 
                 # Écriture dans le dossier .raw
                 with open(target_path, "wb") as out_file:
