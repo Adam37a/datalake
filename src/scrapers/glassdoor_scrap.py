@@ -87,7 +87,7 @@ def scroll_and_click_load_more(driver, pause_time=2, max_attempts=1000, scroll_o
     print(f"Chargement terminé, nombre total d'offres : {last_count}")
 
 
-def export_to_csv(data, filename='jobs3.csv'):
+def export_to_csv(data, filename='glassdoor.csv'):
     if not data:
         logging.warning("Aucune donnée à exporter.")
         return
