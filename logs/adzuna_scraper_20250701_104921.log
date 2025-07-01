@@ -1,0 +1,14 @@
+2025-07-01 10:49:21 [INFO] \U0001f680 Lancement du scraper Adzuna multi-pays (/history)
+2025-07-01 10:49:21 [INFO] \U0001f30d Pays : AT
+2025-07-01 10:49:22 [INFO] \u2705 Données récupérées pour AT (Austria)
+2025-07-01 10:49:22 [INFO] \U0001f4c1 Fichier sauvegardé : C:\Users\ahana\Downloads\projet data lake\data\raw\adzuna\at_it_jobs_history_20250701_104922.json
+2025-07-01 10:49:22 [INFO] \U0001f30d Pays : BE
+2025-07-01 10:49:22 [INFO] \u2705 Données récupérées pour BE (Belgium)
+2025-07-01 10:49:22 [INFO] \U0001f4c1 Fichier sauvegardé : C:\Users\ahana\Downloads\projet data lake\data\raw\adzuna\be_it_jobs_history_20250701_104922.json
+2025-07-01 10:49:22 [INFO] \U0001f30d Pays : CH
+2025-07-01 10:49:23 [INFO] \u2705 Données récupérées pour CH (Switzerland)
+2025-07-01 10:49:23 [INFO] \U0001f4c1 Fichier sauvegardé : C:\Users\ahana\Downloads\projet data lake\data\raw\adzuna\ch_it_jobs_history_20250701_104923.json
+2025-07-01 10:49:23 [INFO] \U0001f30d Pays : DE
+2025-07-01 10:49:24 [INFO] \u2705 Données récupérées pour DE (Germany)
+2025-07-01 10:49:24 [INFO] \U0001f4c1 Fichier sauvegardé : C:\Users\ahana\Downloads\projet data lake\data\raw\adzuna\de_it_jobs_history_20250701_104924.json
+2025-07-01 10:49:24 [INFO] \U0001f30d Pays : ES

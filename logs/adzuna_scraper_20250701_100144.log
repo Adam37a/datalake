@@ -1,0 +1,3 @@
+2025-07-01 10:01:44 [INFO] \U0001f680 Requête Adzuna FR / Paris (/history)
+2025-07-01 10:01:45 [ERROR] \u274c Erreur requête FR/Paris : 400 Client Error: Bad Request for url: https://api.adzuna.com/v1/api/jobs/fr/history?app_id=a1f1e71e&app_key=4096fb7cceb63edc737c40e1536de008&location0=France&location1=Paris&category=it-jobs
+2025-07-01 10:01:45 [INFO] \u2705 Fin du scraping

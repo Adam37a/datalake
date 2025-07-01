@@ -1,0 +1,13 @@
+2025-07-01 09:52:33 [INFO] \U0001f680 Lancement du scraper Adzuna (/history)
+2025-07-01 09:52:33 [INFO] \U0001f30d Pays : FR
+2025-07-01 09:52:34 [INFO] \u2705 Données récupérées pour FR
+2025-07-01 09:52:34 [INFO] \U0001f4c1 Fichier sauvegardé : C:\Users\ahana\Downloads\projet data lake\data\raw\adzuna\fr_history_20250701_095234.json
+2025-07-01 09:52:34 [INFO] \U0001f30d Pays : DE
+2025-07-01 09:52:35 [ERROR] \u274c Erreur pour DE : 400 Client Error: Bad Request for url: https://api.adzuna.com/v1/api/jobs/de/history?app_id=a1f1e71e&app_key=4096fb7cceb63edc737c40e1536de008&category=it-jobs&what=developer&location0=Germany
+2025-07-01 09:52:35 [INFO] \U0001f30d Pays : ES
+2025-07-01 09:52:35 [ERROR] \u274c Erreur pour ES : 400 Client Error: Bad Request for url: https://api.adzuna.com/v1/api/jobs/es/history?app_id=a1f1e71e&app_key=4096fb7cceb63edc737c40e1536de008&category=it-jobs&what=developer&location0=Spain
+2025-07-01 09:52:35 [INFO] \U0001f30d Pays : IT
+2025-07-01 09:52:36 [ERROR] \u274c Erreur pour IT : 400 Client Error: Bad Request for url: https://api.adzuna.com/v1/api/jobs/it/history?app_id=a1f1e71e&app_key=4096fb7cceb63edc737c40e1536de008&category=it-jobs&what=developer&location0=Italy
+2025-07-01 09:52:36 [INFO] \U0001f30d Pays : NL
+2025-07-01 09:52:36 [ERROR] \u274c Erreur pour NL : 400 Client Error: Bad Request for url: https://api.adzuna.com/v1/api/jobs/nl/history?app_id=a1f1e71e&app_key=4096fb7cceb63edc737c40e1536de008&category=it-jobs&what=developer&location0=Netherlands
+2025-07-01 09:52:36 [INFO] \u2705 Fin du scraping

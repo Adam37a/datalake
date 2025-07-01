@@ -1,0 +1,22 @@
+2025-07-01 09:46:04 [INFO] === Lancement du scraper Adzuna ===
+2025-07-01 09:46:04 [INFO] [FR] Traitement page 1
+2025-07-01 09:46:06 [ERROR] Erreur lors de la requête pour FR page 1 : 400 Client Error: Bad Request for url: https://api.adzuna.com/v1/api/jobs/fr/search/1?app_id=a1f1e71e&app_key=4096fb7cceb63edc737c40e1536de008&results_per_page=50&content-type=application%2Fjson&what=developer&category=IT+Jobs
+2025-07-01 09:46:06 [INFO] [FR] Traitement page 2
+2025-07-01 09:46:06 [ERROR] Erreur lors de la requête pour FR page 2 : 400 Client Error: Bad Request for url: https://api.adzuna.com/v1/api/jobs/fr/search/2?app_id=a1f1e71e&app_key=4096fb7cceb63edc737c40e1536de008&results_per_page=50&content-type=application%2Fjson&what=developer&category=IT+Jobs
+2025-07-01 09:46:06 [INFO] [DE] Traitement page 1
+2025-07-01 09:46:07 [ERROR] Erreur lors de la requête pour DE page 1 : 400 Client Error: Bad Request for url: https://api.adzuna.com/v1/api/jobs/de/search/1?app_id=a1f1e71e&app_key=4096fb7cceb63edc737c40e1536de008&results_per_page=50&content-type=application%2Fjson&what=developer&category=IT+Jobs
+2025-07-01 09:46:07 [INFO] [DE] Traitement page 2
+2025-07-01 09:46:07 [ERROR] Erreur lors de la requête pour DE page 2 : 400 Client Error: Bad Request for url: https://api.adzuna.com/v1/api/jobs/de/search/2?app_id=a1f1e71e&app_key=4096fb7cceb63edc737c40e1536de008&results_per_page=50&content-type=application%2Fjson&what=developer&category=IT+Jobs
+2025-07-01 09:46:07 [INFO] [ES] Traitement page 1
+2025-07-01 09:46:08 [ERROR] Erreur lors de la requête pour ES page 1 : 400 Client Error: Bad Request for url: https://api.adzuna.com/v1/api/jobs/es/search/1?app_id=a1f1e71e&app_key=4096fb7cceb63edc737c40e1536de008&results_per_page=50&content-type=application%2Fjson&what=developer&category=IT+Jobs
+2025-07-01 09:46:08 [INFO] [ES] Traitement page 2
+2025-07-01 09:46:08 [ERROR] Erreur lors de la requête pour ES page 2 : 400 Client Error: Bad Request for url: https://api.adzuna.com/v1/api/jobs/es/search/2?app_id=a1f1e71e&app_key=4096fb7cceb63edc737c40e1536de008&results_per_page=50&content-type=application%2Fjson&what=developer&category=IT+Jobs
+2025-07-01 09:46:08 [INFO] [IT] Traitement page 1
+2025-07-01 09:46:09 [ERROR] Erreur lors de la requête pour IT page 1 : 400 Client Error: Bad Request for url: https://api.adzuna.com/v1/api/jobs/it/search/1?app_id=a1f1e71e&app_key=4096fb7cceb63edc737c40e1536de008&results_per_page=50&content-type=application%2Fjson&what=developer&category=IT+Jobs
+2025-07-01 09:46:09 [INFO] [IT] Traitement page 2
+2025-07-01 09:46:10 [ERROR] Erreur lors de la requête pour IT page 2 : 400 Client Error: Bad Request for url: https://api.adzuna.com/v1/api/jobs/it/search/2?app_id=a1f1e71e&app_key=4096fb7cceb63edc737c40e1536de008&results_per_page=50&content-type=application%2Fjson&what=developer&category=IT+Jobs
+2025-07-01 09:46:10 [INFO] [NL] Traitement page 1
+2025-07-01 09:46:10 [ERROR] Erreur lors de la requête pour NL page 1 : 400 Client Error: Bad Request for url: https://api.adzuna.com/v1/api/jobs/nl/search/1?app_id=a1f1e71e&app_key=4096fb7cceb63edc737c40e1536de008&results_per_page=50&content-type=application%2Fjson&what=developer&category=IT+Jobs
+2025-07-01 09:46:10 [INFO] [NL] Traitement page 2
+2025-07-01 09:46:11 [ERROR] Erreur lors de la requête pour NL page 2 : 400 Client Error: Bad Request for url: https://api.adzuna.com/v1/api/jobs/nl/search/2?app_id=a1f1e71e&app_key=4096fb7cceb63edc737c40e1536de008&results_per_page=50&content-type=application%2Fjson&what=developer&category=IT+Jobs
+2025-07-01 09:46:11 [INFO] === Fin du scraping ===
