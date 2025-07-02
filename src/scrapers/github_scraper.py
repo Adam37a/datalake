@@ -36,7 +36,7 @@ DATA_DIR = BASE_DIR / "data" / "raw"
 DATA_DIR.mkdir(parents=True, exist_ok=True)
 
 # === GitHub API functions ===
-def fetch_repositories(language="python", max_repos=30):
+def fetch_repositories(language="python", max_repos=100):
     url = "https://api.github.com/search/repositories"
     params = {
         "q": f"language:{language}",
