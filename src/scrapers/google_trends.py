@@ -37,6 +37,6 @@ if __name__ == "__main__":
 
     try:
         data = get_interest_by_country(keywords)
-        export_json(data, 'trends_par_pays.json')
+        export_json(data, '../../data/raw/google trends/trends_par_pays.json')
     except Exception as e:
         print(f"Erreur pendant l'extraction : {e}")
