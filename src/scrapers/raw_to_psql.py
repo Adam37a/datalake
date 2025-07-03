@@ -11,6 +11,8 @@ sys.path.append(str(Path(__file__).resolve().parents[1]))
 # Imports des fonctions de nettoyage
 from cleaning.cleaning_glassdoor import get_cleaned_glassdoor_df
 from cleaning.google_trendsClean import get_cleaned_google_trends_df
+from cleaning.github_clean import get_cleaned_github_trends_df
+from cleaning.adzuna_clean import get_cleaned_adzuna_df
 
 # === Config de logging ===
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
@@ -58,10 +60,28 @@ def load_data_to_postgres():
     except Exception as e:
         logger.error(f"❌ Erreur nettoyage/insertion Google Trends : {e}")
 
+    # ✅ Cas spécial : GitHub Trends
+    try:
+        logger.info("🧽 Nettoyage des données GitHub Trends...")
+        df_github_trends = get_cleaned_github_trends_df()
+        df_github_trends.to_sql("github_trend", con=engine, if_exists="append", index=False)
+        logger.info("✅ Données GitHub Trends insérées (avec traduction en anglais)")
+    except Exception as e:
+        logger.error(f"❌ Erreur nettoyage/insertion GitHub Trends : {e}")
+
+    # ✅ Cas spécial : Adzuna
+    try:
+        logger.info("🧽 Nettoyage des données Adzuna...")
+        df_adzuna = get_cleaned_adzuna_df()
+        df_adzuna.to_sql("adzuna", con=engine, if_exists="append", index=False)
+        logger.info("✅ Données Adzuna insérées (pays, dates et salaires)")
+    except Exception as e:
+        logger.error(f"❌ Erreur nettoyage/insertion Adzuna : {e}")
+
     # 🔁 Parcours des autres sources
     for source in os.listdir(BASE_DIR):
         normalized_source = source.lower()
-        if normalized_source in EXCLUDED_SOURCES or normalized_source in {"glassdoor", "google trends"}:
+        if normalized_source in EXCLUDED_SOURCES or normalized_source in {"glassdoor", "google trends", "github_trend", "adzuna"}:
             logger.info(f"⏩ Source ignorée : {source}")
             continue
 
