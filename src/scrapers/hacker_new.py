@@ -5,7 +5,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from tqdm import tqdm  # barre de progression
 
 # Définir les chemins
-BASE_DIR = Path(__file__).resolve().parent
+BASE_DIR = Path(__file__).resolve().parents[2]
 raw_dir = BASE_DIR / "data" / "raw" / "hacker_news"
 raw_dir.mkdir(parents=True, exist_ok=True)
 output_file = raw_dir / "all_stories.json"
