@@ -1,0 +1,138 @@
+{
+	"info": {
+		"_postman_id": "66fa24b2-4bda-4219-87ea-7169004c881d",
+		"name": "projet datalake",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25806344"
+	},
+	"item": [
+		{
+			"name": "Adzuna median salary",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token 38c44179426bebdf54ee9b05897d75ed6a60f3c5",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/adzuna/median-salary/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"adzuna",
+						"median-salary",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Trending languages",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token 38c44179426bebdf54ee9b05897d75ed6a60f3c5",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/google-trends/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"google-trends",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Trending languages per country",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token 38c44179426bebdf54ee9b05897d75ed6a60f3c5",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/google-trends/?geoName=Portugal",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"google-trends",
+						""
+					],
+					"query": [
+						{
+							"key": "geoName",
+							"value": "Portugal"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Compétences demandées",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token 38c44179426bebdf54ee9b05897d75ed6a60f3c5",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/glassdoor/competences/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"glassdoor",
+						"competences",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

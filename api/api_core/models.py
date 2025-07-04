@@ -18,3 +18,9 @@ class Glassdoor(models.Model):
         managed = False
         db_table = 'glassdoor'
 
+class GoogleTrends(models.Model):
+    geo_name = models.CharField(max_length=255, primary_key=True, db_column='geoName',)
+
+    class Meta:
+        managed = False
+        db_table = 'google_trends'
