@@ -5,6 +5,7 @@ import os
 import subprocess
 
 SCRAPER_DIR = os.path.expanduser("/Users/martinprevot/Documents/scrapping/datalake/src/scrapers")
+RAW_TO_PSQL_SCRIPT = os.path.join(SCRAPER_DIR, "raw_to_psql.py")  # Assure-toi que le nom du fichier est correct
 
 default_args = {
     'owner': 'martin',
@@ -34,7 +35,7 @@ with DAG(
     tasks = []
 
     for filename in os.listdir(SCRAPER_DIR):
-        if filename.endswith(".py"):
+        if filename.endswith(".py") and filename != "raw_to_psql.py":
             script_path = os.path.join(SCRAPER_DIR, filename)
             task = PythonOperator(
                 task_id=f"run_{filename.replace('.py','')}",
@@ -42,3 +43,11 @@ with DAG(
             )
             tasks.append(task)
 
+    run_raw_to_psql = PythonOperator(
+        task_id="run_raw_to_psql",
+        python_callable=run_scraper(RAW_TO_PSQL_SCRIPT),
+    )
+
+    # Set dependencies: all scrapers must run before raw_to_psql
+    for task in tasks:
+        task >> run_raw_to_psql
